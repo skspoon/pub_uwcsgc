@@ -92,7 +92,7 @@ VECT vect_prd (VECT va, VECT vb, VECT * vd) {
   vd->y = -(va.x * vb.z - vb.x * va.z);
   vd->z =  (va.x * vb.y + vb.x * va.y);
 
-  // double dd = (va.y * vb.z - vb.y * va.z) - (va.x * vb.z - vb.x * va.z) + (va.x * vb.y + vb.x * va.y);
+  // double dd = (va.y * vb.z - vb.y * va.z) - (va.x * vb.z - vb.x * va.z) + (va.x * vb.y - vb.x * va.y);
   show_vect(&va);
   show_vect(&vb);
   printf("vect_prod: ");
